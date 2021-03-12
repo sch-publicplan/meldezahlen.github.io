@@ -3,16 +3,27 @@ title: Repos
 layout: page
 ---
 
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
-  <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
-</head>
-<body>
-  <div id="formio"></div>
-</body>
-<script type="text/javascript">
-  window.onload = function() {
-    Formio.createForm(document.getElementById('formio'), 'https://govforms.live.publicplan.cloud/noqeadydzonmiot/kommune/login');
-  };
-</script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+    <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+
+    <title>Kommune Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <div id="formio"></div>
+    <script type="text/javascript">
+      window.onload = function() {
+        Formio.createForm(document.getElementById('formio'), 'https://govforms.live.publicplan.cloud/noqeadydzonmiot/kommune/login');
+      };
+    </script>
+  </body>
+</html>
